@@ -1,0 +1,16 @@
+header
+    h1 Header
+
+    ul
+        li
+            a(href="/") Home
+        if user
+            li
+                a(href='/mypage') #{user.username}'s Page
+            li 
+                a(href='/logout') Logout
+        if !user
+            li
+                a(href='/login') Login
+            li
+                a(href='/signup') Signup
