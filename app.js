@@ -50,6 +50,6 @@ app.use('/', homeRouter);
 app.use('/flash', flashRouter);
 app.use('/', authRouter);  //signup, login
 
-app.listen(80, function(){
+app.listen(3000, function(){
     console.log("server is running YAY!");
 })
